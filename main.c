@@ -26,6 +26,8 @@
 // }
 
 double medelv(double, double);
+double upphojt_till(double x, int n);
+int siff_sum(int);
 
 int main() {
     SetConsoleOutputCP(65001); // UTF-8 Ãƒâ€¦ Ãƒâ€ž Ãƒâ€“ 
@@ -34,6 +36,6 @@ int main() {
     scanf("%lf", &x);
     printf("det andra talet ?");
     scanf("%lf", &y);
-    double mv = medelv(x, y);
+    double mv = siff_sum(x);   // medelv
     printf("medlevärdet: %f", mv);
 }

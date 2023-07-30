@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\johna\\Documents\\PlatformIO\\Projects\\YH_kurs\\test_C_fran_borjan\\sid_246_pointer",
+            "binaryPath": "c:\\Users\\johna\\Documents\\PlatformIO\\Projects\\YH_kurs\\test_C_fran_borjan\\sid_246_pointer\\main.exe",
+            "binaryArgs": []
+        }
+    ]
+}

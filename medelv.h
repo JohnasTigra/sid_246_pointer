@@ -1,1 +1,0 @@
-double medelv(double, double);

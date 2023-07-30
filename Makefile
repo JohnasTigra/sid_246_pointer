@@ -1,5 +1,5 @@
 PROG = main.exe 
-SRC = main.c medelv.c
+SRC = main.c fbibl.c
 CFLAGS = -g
 LIBS = 
 
