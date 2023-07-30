@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "medelv.h"
+#include "fbibl.h"
 
 // _Bool rotter(double a, double b, double *rot1, double *rot2){
 //     double d = a*a/4-b;
@@ -28,6 +28,7 @@
 double medelv(double, double);
 
 int main() {
+    SetConsoleOutputCP(65001); // UTF-8 Ãƒâ€¦ Ãƒâ€ž Ãƒâ€“ 
     double x, y;
     printf("det första talet ?");
     scanf("%lf", &x);
