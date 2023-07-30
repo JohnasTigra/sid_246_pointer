@@ -33,6 +33,6 @@ int main() {
     scanf("%lf", &x);
     printf("det andra talet ?");
     scanf("%lf", &y);
-    double mv = medelv(x,y);
+    double mv = medelv(x, y);
     printf("medlevärdet: %f", mv);
 }
