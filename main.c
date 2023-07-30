@@ -29,13 +29,23 @@ double medelv(double, double);
 double upphojt_till(double x, int n);
 int siff_sum(int);
 
+
 int main() {
     SetConsoleOutputCP(65001); // UTF-8 Ãƒâ€¦ Ãƒâ€ž Ãƒâ€“ 
     double x, y;
+    //char *text = "korv";
+    char *temp_text = text;
     printf("det första talet ?");
     scanf("%lf", &x);
-    printf("det andra talet ?");
-    scanf("%lf", &y);
+    // printf("det andra talet ?");
+    // scanf("%lf", &y);
     double mv = siff_sum(x);   // medelv
-    printf("medlevärdet: %f", mv);
+    //printf("%c", *text);
+
+   printf("%f", mv);
+   while (*temp_text != '\0') {
+        printf("%c", *temp_text);
+        temp_text++;
+   }
+   return 0;
 }

@@ -23,5 +23,7 @@ int siff_sum(int tal){
         sum = sum + tal % 10; // lägg till sista siffran 
         tal = tal / 10;
     }
+    char *text = "korv";
+
     return sum;
 }
