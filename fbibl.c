@@ -24,7 +24,7 @@ int siff_sum(int tal){
         sum = sum + tal % 10; // modulus 
         tal = tal / 10;
     }
-     const char* txt_func(); { // sub function with text
+     const char* txt_func(); { // sub function with text this text will change depending on function used in main
             char *txt_to_print = "siff_sum_txt";
             return txt_to_print;
         }
