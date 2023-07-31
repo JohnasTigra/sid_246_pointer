@@ -37,7 +37,7 @@ int main() {
     double x, y;
     printf("the first number plz ?");
     scanf("%lf", &x);
-    // printf("det andra talet ?");
+    // printf("the second number plz ?");
     // scanf("%lf", &y);
     double mv = siff_sum(x);   // medelv
     printf("%f", mv);
