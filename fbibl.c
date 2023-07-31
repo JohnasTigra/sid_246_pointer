@@ -42,7 +42,7 @@ void processUserChoice(int choice) {
         case 1:
             int tal;
             printf("the first number plz ?");
-            scanf("%lf", tal);
+            scanf("%lf", &tal);
             int siff_sum(tal);
             printf("this is the value for siff_sum?");
             printf("%f", siff_sum(tal));
