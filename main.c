@@ -30,18 +30,39 @@ double upphojt_till(double x, int n);
 int siff_sum(int tal);
 const char* txt_func();
 
+// MEDLEV,
+// UPPHOJT_TILL,
 
 
-int main() {
+//int main() {
      
-    double x, y;
-    printf("the first number plz ?");
-    scanf("%lf", &x);
-    // printf("the second number plz ?");
-    // scanf("%lf", &y);
-    double mv = siff_sum(x);   // medelv
-    printf("%f", mv);
-    printf("%s", txt_func());
+    //double x, y;
+    // printf("the first number plz ?");
+    // scanf("%lf", &x);
+    // // printf("the second number plz ?");
+    // // scanf("%lf", &y);
+    // double mv = siff_sum(x);   // medelv
+    // printf("%f", mv);
+    // printf("%s", txt_func());
+    
+int main() {
+    printf("Admin menu\n");
+    printf("1. calculate siff_sum\n");
+    printf("2. calculate medelv\n");
+    printf("3. calculate upphojt_till\n");
+    printf("4. Exit\n");
+    int choice;
+    char input[100];
+
+    fgets(input, sizeof(input), stdin);
+    if (sscanf(input, "%d", &choice) != 1) {
+        printf("Please enter a number.\n");
+        return -1; 
+    }
+    return choice;
+
+
    
    return 0;
 }
+
