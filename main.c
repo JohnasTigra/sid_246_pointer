@@ -27,25 +27,21 @@
 
 double medelv(double, double);
 double upphojt_till(double x, int n);
-int siff_sum(int);
+int siff_sum(int tal);
+const char* txt_func();
+
 
 
 int main() {
-    SetConsoleOutputCP(65001); // UTF-8 Ãƒâ€¦ Ãƒâ€ž Ãƒâ€“ 
+     
     double x, y;
-    //char *text = "korv";
-    char *temp_text = text;
-    printf("det första talet ?");
+    printf("the first number plz ?");
     scanf("%lf", &x);
     // printf("det andra talet ?");
     // scanf("%lf", &y);
     double mv = siff_sum(x);   // medelv
-    //printf("%c", *text);
-
-   printf("%f", mv);
-   while (*temp_text != '\0') {
-        printf("%c", *temp_text);
-        temp_text++;
-   }
+    printf("%f", mv);
+    printf("%s", txt_func());
+   
    return 0;
 }
