@@ -19,13 +19,17 @@ double upphojt_till(double x, int n){
 
 int siff_sum(int tal){
     int sum = 0;
-    //const char siff_sum_txt[] = "modulen är";
-    char siff_sum_txt[] = "modulen är";
     
     while(tal > 0){
-        sum = sum + tal % 10; // lägg till sista siffran 
+        sum = sum + tal % 10; // modulus 
         tal = tal / 10;
     }
+     const char* txt_func(); { // sub function with text
+            char *txt_to_print = "siff_sum_txt";
+            return txt_to_print;
+        }
+
+    txt_func(); // calling the sub function to display right text
     return sum;
 
 }
