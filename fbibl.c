@@ -19,11 +19,13 @@ double upphojt_till(double x, int n){
 
 int siff_sum(int tal){
     int sum = 0;
+    //const char siff_sum_txt[] = "modulen är";
+    char siff_sum_txt[] = "modulen är";
+    
     while(tal > 0){
         sum = sum + tal % 10; // lägg till sista siffran 
         tal = tal / 10;
     }
-    char *text = "modulen av siffran är";
-
     return sum;
+
 }
