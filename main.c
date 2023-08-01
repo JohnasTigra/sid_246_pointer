@@ -29,6 +29,7 @@ double medelv(double, double);
 double upphojt_till(double x, int n);
 int siff_sum(int tal);
 const char* txt_func();
+void processUserChoice(int choice); 
 
 // MEDLEV,
 // UPPHOJT_TILL,
@@ -59,10 +60,20 @@ int main() {
         printf("Please enter a number.\n");
         return -1; 
     }
-    return choice;
+    
+        // Main loop of the program
+    // do {
+    //     system("cls"); 
+    //     choice = getUserChoice();
+    //     processUserChoice(choice, &state);
+    // } while (choice != 4);
 
+    //return choice;
+    processUserChoice(choice);
 
    
-   return 0;
+
+   
+   
 }
 

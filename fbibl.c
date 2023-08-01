@@ -12,6 +12,11 @@ void processUserChoice(int choice) {
             printf("this is the value for siff_sum?");
             printf("%f", siff_sum(tal));
             break;
+            
+        default:
+            printf("Please enter number 1 to 4 .\n");
+            break;
+
     }
 }
 
