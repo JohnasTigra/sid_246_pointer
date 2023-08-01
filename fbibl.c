@@ -10,9 +10,9 @@ void processUserChoice(int choice) {
     switch (choice) {
         case 1:
             printf("the first number plz ?");
-            scanf("%f", &tal);
+            scanf("%d", &tal);
             //siff_sum(tal);
-            printf("this is the value for siff_sum");
+            printf("this is the value for siff_sum ");
             printf("%d", siff_sum(tal));
             break;
         case 2:
@@ -21,9 +21,16 @@ void processUserChoice(int choice) {
             printf("the second integer plz ?");
             scanf("%d", &tal2);
             printf("this is the value for medelv ");
-            printf("%.2f", medelv(tal, tal2));
+            printf("%.2lf", medelv(tal, tal2));
             break;
-            
+        case 3:
+            printf("the first integer plz ?");
+            scanf("%d", &tal);
+            printf("the second integer plz ?");
+            scanf("%d", &tal2);
+            printf("this is the value for medelv ");
+            printf("%.2lf", upphojt_till(tal, tal2));
+            break;    
         default:
             printf("Please enter number 1 to 4 .\n");
             break;
@@ -32,7 +39,7 @@ void processUserChoice(int choice) {
 }
 
 double medelv(double num, double num2){
-return  (double)((num + num2) / 2.0);
+return  ((num + num2) / 2.0);
 }
 
 double upphojt_till(double x, int n) {

@@ -48,7 +48,7 @@
     
 int main() {
     printf("Admin menu\n");
-    printf("1. calculate siff_sum\n");
+    printf("1. calculate siff_sum modulus of 10\n");
     printf("2. calculate medelv\n");
     printf("3. calculate upphojt_till\n");
     printf("4. Exit\n");
