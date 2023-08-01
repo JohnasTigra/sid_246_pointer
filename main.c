@@ -25,11 +25,11 @@
 //         printf("reela rötter saknas");
 // }
 
-double medelv(double, double);
-double upphojt_till(double x, int n);
-int siff_sum(int tal);
-const char* txt_func();
-void processUserChoice(int choice); 
+// double medelv(double, double);
+// double upphojt_till(double x, int n);
+// const char* txt_func();
+// void processUserChoice(int choice); 
+// siff_sum(tal);
 
 // MEDLEV,
 // UPPHOJT_TILL,

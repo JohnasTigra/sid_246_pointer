@@ -2,15 +2,27 @@
 #include <math.h>
 #include "fbibl.h"
 
+
+
 void processUserChoice(int choice) {
+    int tal = 0;
+    int tal2 = 0;
     switch (choice) {
         case 1:
-            int tal;
             printf("the first number plz ?");
-            scanf("%lf", &tal);
-            int siff_sum(tal);
-            printf("this is the value for siff_sum?");
-            printf("%f", siff_sum(tal));
+            scanf("%f", &tal);
+            //siff_sum(tal);
+            printf("this is the value for siff_sum");
+            printf("%d", siff_sum(tal));
+            break;
+        case 2:
+            printf("the first integer plz ?");
+            scanf("%d", &tal);
+            printf("the second integer plz ?");
+            scanf("%d", &tal2);
+            double mean = medelv(tal, tal2);
+            printf("this is the value for medelv ");
+            printf("%.2f", mean);
             break;
             
         default:
@@ -20,8 +32,8 @@ void processUserChoice(int choice) {
     }
 }
 
-double medelv(double a, double b) {
-return (a + b) / 2;
+double medelv(double num, double num2){
+return  (double)((num + num2) / 2.0);
 }
 
 double upphojt_till(double x, int n) {
@@ -36,13 +48,11 @@ res = res / x;
 return res;
 }
 
-int siff_sum(tal) {
-int x;
+int siff_sum(int x) {
 int sum = 0;
 while (x > 0) {
 sum = sum + x % 10; // modulus
 x = x / 10;
 return x;
-}
-
+    }
 }
