@@ -20,9 +20,8 @@ void processUserChoice(int choice) {
             scanf("%d", &tal);
             printf("the second integer plz ?");
             scanf("%d", &tal2);
-            double mean = medelv(tal, tal2);
             printf("this is the value for medelv ");
-            printf("%.2f", mean);
+            printf("%.2f", medelv(tal, tal2));
             break;
             
         default:
