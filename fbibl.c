@@ -7,6 +7,7 @@
 void processUserChoice(int choice) {
     double tal = 0;
     double tal2 = 0;
+  
     switch (choice) {
         case 1:
             printf("the first number plz ?");
@@ -21,7 +22,7 @@ void processUserChoice(int choice) {
             printf("the second integer plz ?");
             scanf("%lf", &tal2);
             printf("this is the value for medelv ");
-            printf("%.2lf", medelv(tal, tal2));
+            printf("%.2lf", medelv(&tal, &tal2));
             break;
         case 3:
             printf("the first integer plz ?");
@@ -38,8 +39,8 @@ void processUserChoice(int choice) {
     }
 }
 
-double medelv(double num, double num2){
-return  ((num + num2) * .5);
+double medelv(double *p_tal, double *p_tal2){ //num
+return  ((*p_tal + *p_tal2) * .5);
 }
 
 double upphojt_till(double x, int n) {

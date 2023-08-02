@@ -61,14 +61,6 @@ int main() {
         return -1; 
     }
     
-        // Main loop of the program
-    // do {
-    //     system("cls"); 
-    //     choice = getUserChoice();
-    //     processUserChoice(choice, &state);
-    // } while (choice != 4);
-
-    //return choice;
     processUserChoice(choice);
 
    
