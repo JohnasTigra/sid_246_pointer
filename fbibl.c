@@ -14,7 +14,7 @@ void processUserChoice(int choice) {
             scanf("%d", &tal);
             //siff_sum(tal);
             printf("this is the value for siff_sum ");
-            printf("%d", siff_sum(tal));
+            printf("%d", siff_sum(&tal)); // & gives address to return value , by using pointers
             break;
         case 2:
             printf("the first integer plz ?");
@@ -39,7 +39,7 @@ void processUserChoice(int choice) {
     }
 }
 
-double medelv(double *p_tal, double *p_tal2){ //num
+double medelv(double *p_tal, double *p_tal2){ 
 return  ((*p_tal + *p_tal2) * .5);
 }
 
@@ -55,11 +55,11 @@ res = res / x;
 return res;
 }
 
-int siff_sum(int x) {
+int siff_sum(int *p_tal) {
 int sum = 0;
-while (x > 0) {
-sum = sum + x % 10; // modulus
-x = x / 10;
-return x;
+while (*p_tal> 0) {
+sum = sum + *p_tal % 10; // modulus
+*p_tal = *p_tal / 10;
+return *p_tal;
     }
 }
